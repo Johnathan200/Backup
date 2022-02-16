@@ -1,0 +1,5 @@
+1602213549712	Extract method 'extracted'
+1602213812585	Rename local variable 'Button'
+1602230381175	Extract method 'createObjects'
+1602230476237	Extract method 'setAndAddProperties'
+1602230540914	Extract method 'setVisibility'

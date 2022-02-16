@@ -1,0 +1,17 @@
+Objective - Master web technologies -  HTML | CSS | JS  
+......................................................
+
+Demonstrate your skill : [maths-tutor  website]
+...............................................
+
+Deploy the website - Plaftorm - 
+-----------------------------
+  . Apache [Web] Server (Administration)
+  . Tomcate [Application] Server (Administration)
+  . MSQL - DBMS (Administration+Scripting)- 
+
+Connection Technologies
+-----------------------
+
+Java - UI to Database Connectivity.
+Eclispe - IDE for Java

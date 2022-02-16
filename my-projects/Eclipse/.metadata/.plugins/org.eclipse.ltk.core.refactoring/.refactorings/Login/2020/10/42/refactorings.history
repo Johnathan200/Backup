@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;GUI.java&apos; to &apos;Jmeet/src/com.jmeet&apos;&#x0D;&#x0A;- Original project: &apos;Login&apos;&#x0D;&#x0A;- Destination element: &apos;Jmeet/src/com.jmeet&apos;&#x0D;&#x0A;- Original element: &apos;GUI.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Jmeet/src&lt;com.jmeet" element1="/src&lt;{GUI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1602504850339" units="1" version="1.0"/>
+</session>

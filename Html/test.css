@@ -1,0 +1,17 @@
+body {
+    height: 100px;
+    width: 5 px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+input[type = button]{
+
+    width: 125px;
+    background-color: skyblue;
+    border-radius: 5px;
+    border-width: 0px;
+    text-decoration: lightblue;
+    font-family: monospace;
+    cursor: pointer;
+    
+}
+

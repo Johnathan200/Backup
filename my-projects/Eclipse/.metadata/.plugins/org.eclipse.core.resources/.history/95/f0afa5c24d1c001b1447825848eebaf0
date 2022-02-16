@@ -1,0 +1,113 @@
+package com.jmeet;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+public class GUI {
+
+	
+	public static void main(String[] args) {
+		Login login = new Login();
+		login.launchLoginPage();
+	}
+
+	public void setVisibility() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setVisibility(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+	
+class Login implements ActionListener {
+		
+		private JLabel sucess;
+		private JButton login;
+		private JTextField userText;
+		private JPasswordField passwordText;
+		private JLabel uLabel;
+		private JLabel pLabel;
+		private JPanel panel;
+        private JFrame frame;
+        private JButton signin;
+		 
+		
+
+        
+       public void createObjects() {
+    		sucess = new JLabel(""); // Date - 09/10 ; 10/09 - i18n
+    	    login = new JButton("Login");// Button
+    		userText = new JTextField();// User Field
+    		passwordText = new JPasswordField();//password Field
+    		uLabel = new JLabel("User");// user label
+    		pLabel = new JLabel("Password");// pass label
+    		panel = new JPanel();// panel
+    		frame = new JFrame();// frame
+    		signin = new JButton();
+    	}
+    	
+    	public void setVisibility() {
+    		sucess.setVisible(false);
+    		frame.setVisible(true); // Making the pop up login visible
+    	}
+
+    	public  void setAndAddProperties() {
+    		frame.setResizable(false);
+    		frame.setSize(350, 200);// size of frame
+    		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// closing operation
+    		//******************************************************************************\\
+    		frame.add(panel);// connecting panel with frame
+    		panel.setLayout(null);// keeping normal layout
+    		uLabel.setBounds(10, 20, 80, 25); // setting the place for user label
+    		panel.add(uLabel);// adding the user label to panel
+    		pLabel.setBounds(10, 60, 80, 25); // setting the place for password label
+    		panel.add(pLabel);// adding the password label to panel
+    		userText.setBounds(100, 20, 165, 25);
+    		panel.add(userText);// setting the place for User text field
+    		passwordText.setBounds(100, 60, 165, 25);
+    		panel.add(passwordText);// setting the place for password text field
+    		login.setBounds(100, 90, 80, 25);// setting the place for login button
+    		signin.setBounds(200, 90, 80, 25);
+    		login.addActionListener(this);
+    		panel.add(login); // adding the Button to panel
+    		panel.add(signin);
+    		sucess.setBounds(10, 110, 300, 25);
+    		panel.add(sucess);
+    	}
+    	
+    	public void launchLoginPage() {
+    		
+    		createObjects();
+    		setAndAddProperties();
+    		setVisibility();
+    	
+    		
+    	}
+
+     	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		
+    		if ( e.getActionCommand().equals("Login")) {
+    			sucess.setVisible(true);
+    			String user = userText.getText();   
+    			String password = passwordText.getText();
+    			System.out.println( "username:" + user + " , " + password);
+    			
+    			if(user.equals("Johnathan") && password.equals("Admin@123")) {
+    				sucess.setText("Login successful");
+    			}else {
+    				sucess.setText("Login not successful");
+    			}
+    	
+   
+    		}
+    	}
+
+}
