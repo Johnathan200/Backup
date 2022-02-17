@@ -9,6 +9,12 @@ body{
     border-radius: 5px;
     text-align: center;
 }
+#sl{
+    width: 100px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+}
 img{
     border-radius:200px;
 }
