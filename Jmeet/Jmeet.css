@@ -1,26 +1,44 @@
 body{
-    background-color: aquamarine;
-    
+    background-color: skyblue;
+
 }
 #form {
+    float: left;
     background-color: black;
     width: 200px ;
     align-content: center;
     border-radius: 5px;
     text-align: center;
+
 }
 #sl{
-    width: 100px;
-    height: 200px;
+    float: left;
+    border-radius: 15px;
+    width: 85px;
+    height: 750px;
     background-color: white;
     text-align: center;
+
 }
 img{
     border-radius:200px;
 }
 body{
- padding-left: 10px;
+align-items: center;
 }
-a{
-    
+button{
+  border-radius: 2px;
+  background-color:black;
+  border: 2px;
+  color: White;
+
+
+}
+button:hover{
+  border-radius: 4px;
+  background-color:skyblue;
+
+  border: 2px;
+  transition-duration: 1s;
+  color: Black;
 }
