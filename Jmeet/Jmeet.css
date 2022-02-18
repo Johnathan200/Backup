@@ -20,7 +20,7 @@ body{
     text-align: center;
 
 }
-img{
+.Image{
     border-radius:200px;
 }
 body{
@@ -35,10 +35,13 @@ button{
 
 }
 button:hover{
-  border-radius: 4px;
+  border-radius: 20px;
   background-color:skyblue;
-
+  box-shadow: 10px 10px 10px lightblue;
   border: 2px;
   transition-duration: 1s;
   color: Black;
+}
+button:not(:hover){
+    transition-duration: 1.5s;
 }
