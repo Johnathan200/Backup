@@ -27,11 +27,13 @@ body{
 align-items: center;
 }
 button{
-  border-radius: 2px;
-  background-color:black;
-  border: 2px;
-  color: White;
-
+    height: 50px;
+    width: 75px ;
+    border-radius: 10px;
+    background-color:black;
+    border: 2px;
+    color: White;
+    transition-duration: 0.01
 
 }
 button:hover{
@@ -39,9 +41,12 @@ button:hover{
   background-color:skyblue;
   box-shadow: 10px 10px 10px lightblue;
   border: 2px;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   color: Black;
 }
 button:not(:hover){
-    transition-duration: 1.5s;
+    transition-duration: 0.5s;
+}
+#put{
+    border-radius: 15px;
 }
