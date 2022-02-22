@@ -3,6 +3,7 @@ body{
 
 }
 #form {
+    visibility: hidden;
     float: left;
     background-color: black;
     width: 200px ;
@@ -47,6 +48,11 @@ button:hover{
 button:not(:hover){
     transition-duration: 0.5s;
 }
-#put{
-    border-radius: 15px;
+input{
+    border-radius: 5px;
+    border: 1px;
+    border-color: white;
+    background-color: black;
+    color: white;
+
 }
