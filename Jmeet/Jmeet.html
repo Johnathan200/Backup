@@ -7,29 +7,22 @@
     <title>Jmeet</title>
     <link class = "Image" rel="shortcut icon" href="favicon.ico">
 </head>
+ <link rel="stylesheet" href="Jmeet.css">
 <script src="Jmeet.js">
-  function formjs() {
-    var checker = document.getElementById("form")
-    if(checker.style.display == "block") {
-        checker.style.display = "none";
-}
-else {
-    checker.style.display = "block";
-}
-  }
+
 </script>
-<link rel="stylesheet" href="Jmeet.css">
+
 <body>
   <div id="sl">
     <br>
     <br>
-      <button onclick="formjs()">Login</button>
+      <button onclick='one()'>Login</button>
       <br>
       <br>
       <a href="Downloadspage.html"><button onclick="btncall">download</button></a>
     </div>
 
-    <div id = form>
+    <div id="form">
         <br>
         <form>
             <img class = "Image" src="usr.jpeg">
@@ -40,7 +33,7 @@ else {
             <input class="put" type="email" placeholder=" Your email adress">
             <br>
             <br>
-            <input class =" put" type="password" place holder = "Password">
+            <input class =" put" type="password" placeholder = "Password">
         </form>
         <br>
     </div>

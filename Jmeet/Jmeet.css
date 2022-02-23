@@ -3,7 +3,7 @@ body{
 
 }
 #form {
-    visibility: hidden;
+    display: none;
     float: left;
     background-color: black;
     width: 200px ;
@@ -28,6 +28,7 @@ body{
 align-items: center;
 }
 button{
+    cursor: pointer;
     height: 50px;
     width: 75px ;
     border-radius: 10px;
