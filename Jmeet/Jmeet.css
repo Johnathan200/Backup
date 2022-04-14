@@ -10,6 +10,7 @@ body{
     align-content: center;
     border-radius: 5px;
     text-align: center;
+    transition-duration: 2s;
 
 }
 #sl{
@@ -27,7 +28,7 @@ body{
 body{
 align-items: center;
 }
-button{
+.openBtn{
     cursor: pointer;
     height: 50px;
     width: 75px ;
@@ -38,7 +39,7 @@ button{
     transition-duration: 0.01
 
 }
-button:hover{
+.openBtn:hover{
   border-radius: 20px;
   background-color:skyblue;
   box-shadow: 10px 10px 10px lightblue;
@@ -46,7 +47,7 @@ button:hover{
   transition-duration: 0.5s;
   color: Black;
 }
-button:not(:hover){
+.openBtn:not(:hover){
     transition-duration: 0.5s;
 }
 input{

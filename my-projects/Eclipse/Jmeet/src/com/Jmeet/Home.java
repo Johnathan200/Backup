@@ -3,56 +3,62 @@ package com.Jmeet;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Home implements ActionListener{
-	
+public class Home{
 	public static void main(String[]args) {
 		
-		creator c = new creator();
+		Executer e = new Executer();
+		e.execute();
+		
+	}
+}  
+
+		
+//class for creating objects
+class creator {
+	
+	JFrame frame = new JFrame();
+	JPanel panel = new JPanel();
+	JButton btnl = new JButton();	
+	JButton btnvi = new JButton();
+}
+
+class Executer implements ActionListener{
+	creator c = null; // default 
+	public void execute() {
+	     c = new creator();
 		c.frame.setSize(500,350);
+		c.frame.setTitle("Jmeet- home");
 		c.frame.setResizable(false);
 		c.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		c.frame.add(c.panel);	
 
-		
-		
-		c.buttonl.addActionListener(new Home());
-		c.buttonvi.addActionListener(new Home());
-		c.panel.add(c.buttonl);
-		c.panel.add(c.buttonvi);
+		c.btnvi.setText("Start video call");
+		c.btnl.setText("Login");
+		c.btnl.addActionListener(this);
+		c.btnvi.addActionListener(this);
+		c.panel.add(c.btnl);
+		c.panel.add(c.btnvi);
 
-		c.buttonl.setBounds(40, 100, 100, 60);
+		c.btnl.setBounds(40, 100, 100, 60);
+		c.btnvi.setBounds(50,100,100,60);
 		
 		c.frame.setVisible(true);
-		
-		
-	}
-	
 
+	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		creator c = new creator();
-			if (e.getSource() != c.buttonl) {
-				Jmeet jm = new Jmeet();
-				jm.Login();
-			
-			
-			}else{
-				Videocall vc =new Videocall();
-				vc.videoDisplay();
-			}
-	}
-
-}  
-
+		if (e.getSource() == c.btnl) {
+			Login j = new Login();
+			j.login();
+		}
+		if (e.getSource() == c.btnvi){
+			Videocall vc = new Videocall();
+			vc.videoDisplay();
+		}
 		
-
-class creator {
+	}
 	
-	JFrame frame = new JFrame("Jmeet- Home");
-	JPanel panel = new JPanel();
-	JButton buttonl = new JButton("Login");	
-	JButton buttonvi = new JButton("Start video call");
-
+		
 }
 
 

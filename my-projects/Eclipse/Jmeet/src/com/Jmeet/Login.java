@@ -6,15 +6,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import java.awt.event.*;
+import com.connection.convector;
 
-
-
-
-public class Jmeet {
+public class Login {
 
 	
-	void Login() {
+	void login() {
 	instanceMaker iM = new instanceMaker();
 	// frame code
 	iM.	frame.setSize(350,200);
@@ -33,17 +30,14 @@ public class Jmeet {
 	//Label code
 	iM.usrlabel.setBounds(10,20,80,25);
 	iM.passlabel.setBounds(10,80,80,25);
-	iM.ulabel.setText("Johnathan");
 	
-	//txtfield code
+	//text field code
 	iM.usrTxt.setBounds(100, 20, 165, 25);
 	iM.passTxt.setBounds(100, 80, 165, 25);
 	
 	//button code
 	
 	iM.button.setBounds(125,120,80,25);
-	iM.ulabel.setText("Johnathan");
-	iM.plabel.setText("admin123");
 
 	}
 }
@@ -56,9 +50,5 @@ class instanceMaker{
 	JTextField usrTxt = new JTextField(20);
 	JPasswordField passTxt= new JPasswordField(10);
 	JButton button = new JButton("Login");
-	JLabel ulabel = new JLabel();
-	JLabel plabel =new JLabel();
-
-	
-	
+		
 }
