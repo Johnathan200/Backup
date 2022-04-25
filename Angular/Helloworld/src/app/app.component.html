@@ -1,14 +1,12 @@
-<form>
-    <mat-form-field>
-        <input type ="text">
-        <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of options" [value]="option">
-              one
-            </mat-option>
-            <mat-option>
-                two
-            </mat-option>
-          </mat-autocomplete>
-    </mat-form-field>
-
-</form>
+<p>
+  <mat-toolbar class="my-alternate-theme" color = "primary">
+    <span>Hello world</span>
+  </mat-toolbar>
+</p>
+<mat-form-field>  
+    <mat-label>Search</mat-label>
+    <input matInput>
+</mat-form-field>
+<section>
+  <button mat-flat-button color ="primary"><mat-icon>search</mat-icon></button>
+</section>
