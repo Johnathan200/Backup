@@ -23,7 +23,7 @@ class creator {
 }
 
 class Executer implements ActionListener{
-	creator c = null; // default 
+	creator c ; // default 
 	public void execute() {
 	     c = new creator();
 		c.frame.setSize(500,350);

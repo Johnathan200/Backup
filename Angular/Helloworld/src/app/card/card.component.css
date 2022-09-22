@@ -1,0 +1,19 @@
+mat-card{
+width: 200px;
+}
+
+button {
+    color: rgb(163, 105, 105);
+}
+
+mat-card-title{
+    display: flex;
+     justify-content: center;
+
+}
+#Unavailable{
+    background-color: #ff4d4d;
+}
+#Available{
+    background-color: lightgreen;
+}
