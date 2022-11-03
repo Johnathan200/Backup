@@ -48,8 +48,7 @@ class Executer implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == c.btnl) {
-			Login j = new Login();
-			j.login();
+			
 		}
 		if (e.getSource() == c.btnvi){
 			Videocall vc = new Videocall();

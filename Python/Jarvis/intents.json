@@ -1,0 +1,20 @@
+{"intents":[
+
+    {
+        "tags":"Greetings",
+        "patterns":["Good morning JARVIS", "Sup JARVIS","JARVIS Initiate"],
+        "responses":["Good morning Sir"]
+    },
+    {
+        "tags":"Job",
+        "patterns":["Switch on the lights", "power the lights"],
+        "responses":["Switching on sir"]
+    } ,  
+    {
+        "tags":"Exit",
+        "patterns":["Peace out", "Power of jarvis","Shutdown Jarvis"],
+        "responses":["Switching on sir"]
+    }
+  
+
+]}
