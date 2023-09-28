@@ -13,12 +13,18 @@ import javax.swing.JTextField;
 
 public class Testing_101 {
 	
+	public ytalarm(int hours, int minutes) {
+		
+		hrs = hours;
+	}
+	
 	public static void main(String[] args) {
 		
-		GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-		GraphicsDevice[] s = ge.getScreenDevices();
+		int hrs, min;
 		
-		System.out.println(s);
+		String url = "";
+		ytalarm
+		
 		 
 }  
 

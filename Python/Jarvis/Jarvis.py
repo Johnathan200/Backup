@@ -3,20 +3,20 @@ from neuralintents import GenericAssistant
 import speech_recognition
 import pyttsx3 as tts
 
-wrkmsg = "Mera naam he apoon"
+wrkmsg = "Good morning Sir"
 recognizer = speech_recognition.Recognizer()
 
 speaker= tts.init()
 
 speaker.setProperty('rate', 150) 
-
+speaker.say( "Jarvis is online and running")
+speaker.say( "Current version Jarvis 1 point O")
 speaker.say(wrkmsg)
 speaker.runAndWait()
 
 def DotheJob():
         global recognizer
-
-        speaker.say("What the heck do  u want")
+        
         speaker.runAndWait()
 
         queryComplete = False
@@ -37,15 +37,14 @@ def DotheJob():
             except speech_recognition.UnknownValueError:
                     recognizer =  speech_recognition.Recognizer()
                     speaker.say("What?")
-                    speaker.runAndWait()
-                    
+                    speaker.runAndWait(0.1)
 
 DotheJob()
 speaker.say("What?")
 
-# def Job():
+def Job():
         
-#         print(job)
+        print(DotheJob)
 
 
 assistant = GenericAssistant('intents.json')
